@@ -164,6 +164,7 @@ img[alt="logo"]{
 
 #inner-shedulle{
     width: 100%;
+    padding-top: 15px;
     display: inline-block;
     background: steelblue;
     min-height: 70px;
@@ -172,6 +173,7 @@ img[alt="logo"]{
 
 #inner-address{
     width: 100%;
+    padding-top: 15px;
     display: inline-block;
     background: steelblue;
     min-height: 70px;
@@ -180,6 +182,7 @@ img[alt="logo"]{
 
 #inner-contacts{
     width: 100%;
+    padding-top: 15px;
     display: inline-block;
     background: steelblue;
     min-height: 70px;
@@ -188,6 +191,7 @@ img[alt="logo"]{
 
 #inner-about-goods{
     width: 100%;
+    padding-top: 15px;
     display: inline-block;
     background: steelblue;
     min-height: 70px;
@@ -197,6 +201,7 @@ img[alt="logo"]{
 .refs{
     animation-name: rotation;
     animation-duration: 3s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: 2;
     animation-direction: alternate;
     display: block;
@@ -275,6 +280,18 @@ canvas{
     }
 }
 
+@media screen and (max-width: 1210px){
+    #inner-contacts{
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 905px){
+    #inner-address{
+        padding-top: 0;
+    }
+}
+
 @media screen and (max-width: 900px){
     #content, #sidebar{
         float: none;
@@ -337,6 +354,7 @@ canvas{
         padding: 0;
         max-width: 90px;
         padding-top: 8px;
+        animation-iteration-count: infinite;
     }
 
     .imgview{
@@ -345,8 +363,9 @@ canvas{
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        margin-left: 5px;
+        margin-left: 45px;
         margin-top: 15px;
+        margin-right: 10px;
     }
 
     .desc{
@@ -360,6 +379,9 @@ canvas{
     }
     
     #inner-about-goods,#inner-contacts, #inner-address, #inner-shedulle{
-        padding-top: 10px;
+        padding-top: 15px;
+    }
+    #first-item, #third-item, #fifth-item{
+        background-color: olivedrab;
     }
 }
