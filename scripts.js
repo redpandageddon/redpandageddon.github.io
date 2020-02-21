@@ -108,7 +108,7 @@ $('document').ready( function()
             $('.inner-sidebar').append(contacts_text);
             $('.inner-sidebar').css("background-color", "orchid");
             $('.inner-sidebar').css("text-align", "center");
-            $('.inner-sidebar').css("padding-top", "50px");
+            $('.inner-sidebar').css("padding-top", "40px");
         });
 
         $('#inner-about-goods').click( function(){
@@ -120,7 +120,7 @@ $('document').ready( function()
             $('.inner-sidebar').append(about_goods_text);
             $('.inner-sidebar').css("background-color", "olive");
             $('.inner-sidebar').css("text-align", "center");
-            $('.inner-sidebar').css("padding-top", "50px");
+            $('.inner-sidebar').css("padding-top", "38px");
         });
     }
 );
