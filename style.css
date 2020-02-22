@@ -27,18 +27,19 @@ body{
 }
 
 #content{
-    width: 70%;
+    width: 80%;
     float: left;
 }
 
 .inner-sidebar{
+    font-size: 24px;
     background-color: darkslategray;
     min-height: 505px;
 }
 
 #sidebar{
     padding-left: 10px;
-    width: 30%;
+    width: 20%;
     float: left;
 }
 
