@@ -10,7 +10,7 @@ body{
 
 .inner-header{
     background-color: darkgreen;
-    min-height: 200px;
+    height: 200px;
     animation-name: color-changer;
     animation-duration: 6s;
     animation-direction: alternate;
@@ -24,6 +24,7 @@ body{
 
 .inner-content{
     min-height: 505px;
+    background-color: orangered;
 }
 
 #content{
@@ -88,9 +89,7 @@ canvas{
 }
 
 #logo{
-    max-height: 200px;
-    float: left;
-    width: 10%;
+    height: 200px;
     z-index: 2;
 }
 
@@ -124,6 +123,7 @@ canvas{
 }
 
 #cat {
+    margin-left: 10px;
     max-width: 200px;
 }
 
@@ -217,60 +217,6 @@ canvas{
     z-index: 1;
 }
 
-.items{
-    float: left;
-    width: 33.33%;
-    padding-bottom: 5px;
-}
-
-.color-box-item{
-    width: 100%;
-    height: 250px;
-    background-color: steelblue;
-}
-
-@keyframes recolor{
-    from{
-        background-color: steelblue;
-    }
-    to{
-        background-color: firebrick;
-    }
-}
-
-.color-box-item:hover{
-    animation-name: recolor;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-.imgview{
-    display: block;
-    float: left;
-    width: 105px;
-    height: 105px;
-    border-radius: 50%;
-    margin-top: 10px;
-    margin-left: 90px;
-}
-
-#add{
-    padding-top: 30px;
-}
-
-#your-item{
-    text-align: center;
-}
-
-.desc{
-    padding-top: 30px;
-    display: block;
-    float: left;
-    padding-left: 30px;
-    font-size: 20px;
-}
-
 @media screen and (max-width: 940px){
     .refs{
         padding-top: 20px;
@@ -292,7 +238,10 @@ canvas{
 
 @media screen and (max-width: 900px){
     #cat{
-        max-width: 100px;
+        max-width: 135px;
+        padding-top: 15px;
+        padding-left: 10px;
+        margin: 0;
     }
 
     #content, #sidebar{
@@ -314,7 +263,11 @@ canvas{
     }
 
     .inner-header{
-        min-height: 150px;
+        height: 150px;
+    }
+
+    #logo{
+        height: 150px;
     }
 
     .inner-content, .inner-sidebar{
@@ -339,17 +292,6 @@ canvas{
         display: inline;
     }
 
-    .items{
-        float: none;
-        width: 100%;
-        height: 100px;
-        padding: 0;
-    }
-
-    .color-box-item:hover{
-    animation: none;
-    }
-
     .refs{
         display: block;
         float: none;
@@ -358,32 +300,8 @@ canvas{
         padding-top: 8px;
         animation-iteration-count: infinite;
     }
-
-    .imgview{
-        display: block;
-        float: left;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        margin-left: 45px;
-        margin-top: 15px;
-        margin-right: 10px;
-    }
-
-    .desc{
-        font-size: 16px;
-    }
-
-    .color-box-item{
-        background-color: darkolivegreen;
-        width: 100%;
-        height: 100px;
-    }
     
     #inner-about-goods,#inner-contacts, #inner-address, #inner-shedulle{
         padding-top: 15px;
-    }
-    #first-item, #third-item, #fifth-item{
-        background-color: olivedrab;
     }
 }
