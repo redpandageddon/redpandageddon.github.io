@@ -5,15 +5,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <script src="jquery-3.4.0.min.js"></script>
+        <script src="jquery-3.4.0.min.js" defer></script>
     </head>
     <body>
         <div id="wrapper">
             <div id="header" class="row">
-                
+                <canvas id="canvas"></canvas>
                 <div class="inner-header">
                     <div id="logo">
-                        <canvas id="canvas"></canvas>
+                        <img id="cat" src="./imgs/cat_pumpkin_halloween_22020.png" alt="logo">
                     </div>
                     <div id="name">
                         <h1>Магазин простейших</h1>
@@ -74,17 +74,16 @@
                 </div>
                 <div id="sidebar">
                     <div class="inner-sidebar">
-                        <img src="./imgs/cat_pumpkin_halloween_22020.png" alt="logo">
                     </div>
                 </div>
             </div>
             <div id="footer">
                 <div class="inner-footer">
                     <a href="https://github.com/redpandageddon"><img class="refs" src="./imgs/githib.png" alt="github"></a>
-                    <a href="#"><img class="refs" src="./imgs/vk.png" alt="vk"></a>
+                    <a href="https://vk.com/vyatsu_cay"><img class="refs" src="./imgs/vk.png" alt="vk"></a>
                 </div>
             </div>
         </div>
-        <script src="scripts.js"></script>
+        <script src="scripts.js" defer></script>
     </body>
 </html>

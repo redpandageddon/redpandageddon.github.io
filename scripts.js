@@ -4,6 +4,15 @@ let address_text = "<h3>Адреса магазинов</h3><br>г. Дракон
 let contacts_text = "<h3>Телефоны</h3><br>Телефон горячей линии <br>***-***-***-**<br><br>Телефон склада<br>***-***-***-**<br><br>Телефон для корпоративных клиентов<br>***-***-***-**";
 let about_goods_text = "<h3>Инофрмация о товарах</h3><br>Наши товары привозятся из стран с древнейшими традициями использования данного товара, он обладает высочайшим качеством и не имеет аналогов на рынке";
 
+let cur_img = 0;
+
+let imgs = Array(   "./imgs/img2.jpg",
+                    "./imgs/img3.jpg",
+                    "./imgs/img4.jpg",
+                    "./imgs/img5.jpg",
+                    "./imgs/img6.jpg"
+);
+
 $('document').ready( function()
     {
         let canvas = document.getElementById("canvas");
@@ -25,6 +34,16 @@ $('document').ready( function()
                 d: Math.random()*mp 
             })
         }
+
+        function sidebar_imgs_swapper(){
+            cur_img++;
+            if(cur_img>4){
+                cur_img=0;
+            }
+            $('.inner-sidebar').css("background-image","url(" + imgs[cur_img] + ")");
+        }
+
+        let q1 =  setInterval(sidebar_imgs_swapper, 3000);
         
         function draw()
         {
@@ -73,6 +92,7 @@ $('document').ready( function()
                 }
             }
         }
+
         setInterval(draw, 25);
 
         $('#inner-shedulle').click( function(){
@@ -85,6 +105,8 @@ $('document').ready( function()
                 $('.inner-sidebar').css("background-color", "burlywood");
                 $('.inner-sidebar').css("text-align", "center");
                 $('.inner-sidebar').css("padding-top", "50px");
+                $('.inner-sidebar').css("background-image", "none");
+                clearInterval(q1);
             });
 
         $('#inner-address').click( function(){
@@ -97,6 +119,8 @@ $('document').ready( function()
             $('.inner-sidebar').css("background-color", "darkseagreen");
             $('.inner-sidebar').css("text-align", "center");
             $('.inner-sidebar').css("padding-top", "50px");
+            $('.inner-sidebar').css("background-image", "none");
+            clearInterval(q1);
         });
     
         $('#inner-contacts').click( function(){
@@ -109,6 +133,8 @@ $('document').ready( function()
             $('.inner-sidebar').css("background-color", "orchid");
             $('.inner-sidebar').css("text-align", "center");
             $('.inner-sidebar').css("padding-top", "40px");
+            $('.inner-sidebar').css("background-image", "none");
+            clearInterval(q1);
         });
 
         $('#inner-about-goods').click( function(){
@@ -121,6 +147,8 @@ $('document').ready( function()
             $('.inner-sidebar').css("background-color", "olive");
             $('.inner-sidebar').css("text-align", "center");
             $('.inner-sidebar').css("padding-top", "38px");
+            $('.inner-sidebar').css("background-image", "none");
+            clearInterval(q1);
         });
     }
 );
