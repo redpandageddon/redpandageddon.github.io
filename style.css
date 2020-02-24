@@ -23,8 +23,11 @@ body{
 }
 
 .inner-content{
-    min-height: 505px;
-    background-color: orangered;
+    height: 505px;
+    background-image: url(./imgs/img7.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #content{
@@ -54,6 +57,11 @@ body{
 
 #footer{
     margin-top: 10px;
+}
+
+#outer-container{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #container{
@@ -230,7 +238,7 @@ canvas{
     }
 }
 
-@media screen and (max-width: 905px){
+@media screen and (max-width: 925px){
     #inner-address{
         padding-top: 0;
     }
@@ -244,6 +252,10 @@ canvas{
         margin: 0;
     }
 
+    #outer-container{
+        padding: 0;
+    }
+
     #content, #sidebar{
         float: none;
         width: 100%;
@@ -255,7 +267,7 @@ canvas{
     }
 
     #content{
-        height: 600px;
+        height: 300px;
     }
 
     body{
@@ -271,7 +283,7 @@ canvas{
     }
 
     .inner-content, .inner-sidebar{
-        min-height: 300px;
+       height: 300px;
         font-size: 20px;
         padding: 0;
     }
