@@ -82,7 +82,7 @@ body{
 .inner-sidebar{
     background-image: url("./imgs/img2.jpg");
     font-size: 24px;
-    min-height: 505px;
+    height: 505px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
